@@ -1,7 +1,7 @@
 # 📘 BudgetWise - AI-Based Expense Forecasting Tool
 
 ## Overview
-BudgetWise is an AI-based expense forecasting tool designed to help users analyze and visualize their daily and category-wise expenses. It is built using Python libraries: **NumPy, Pandas, and Matplotlib**.
+BudgetWise AI-based expense forecasting tool is designed to help users analyze and visualize their daily and category-wise expenses. It is built using Python libraries: **NumPy, Pandas, and Matplotlib**.
 
 ## Features
 - Load and preview expense datasets (`expenses.csv`).
