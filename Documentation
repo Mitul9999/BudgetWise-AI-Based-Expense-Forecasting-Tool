@@ -1,137 +1,127 @@
-📘 BudgetWise – Milestone 1 Documentation
-AI-Based Expense Forecasting Tool (Infosys Springboard Internship)
-🧩 1. Project Overview
+BudgetWise AI-Based Expense Forecasting Tool (Infosys Springboard Internship) -> Milestone - 1
 
-BudgetWise is a personal expense analysis and visualization tool developed as part of the Infosys Springboard Internship (Milestone 1).
+🎯 1. Objective:
+To understand how data can be analyzed and visualized using NumPy, Pandas, and Matplotlib in Python.
 
-This milestone focuses on understanding the fundamentals of data analysis using Python libraries — NumPy, Pandas, and Matplotlib.
+📘 Key Goals:
 
-The goal of this milestone is to:
-
-Load and analyze expense data from a CSV file.
+Load and process expense data.
 
 Calculate total and average expenses.
 
-Visualize spending patterns through bar and line charts.
+Create clear and meaningful visualizations.
 
-Build a foundation for AI-based expense forecasting in future milestones.
+Build the base for AI-powered expense forecasting (Milestone 2).
 
-📅 2. Project Timeline
-Phase	Task Description	Duration	Status
-Day 1–2	Understanding project requirements and dataset structure.
-Day 3–4	Learning and practicing NumPy, Pandas, and Matplotlib basics.
-Day 5	Implemented code for data loading, analysis, and visualizations.
-Day 6	Testing, verifying outputs, and reviewing insights.
-Day 7	Documentation writing and GitHub repository creation.
-Total Duration	1 Week	
+🗓️ 2. Project Timeline
+🕒 Phase	                    💡 Task Description	                                            ⏰Duration	
+Day 1–2	       Studied project requirements and dataset structure.	                               2 Days	
+Day 3–4	       Learned and practiced NumPy, Pandas, and Matplotlib basics.	                       2 Days	
+Day 5	         Implemented data analysis and visualizations.	                                     1 Day	
+Day 6	         Tested and verified outputs.	                                                       1 Day	
+Day 7	         Documentation and GitHub upload.	                                                   1 Day	
+
+🗓️ Total Duration: 1 Week
 
 📂 3. Dataset Description
 
-The dataset used is expenses.csv, containing 10 rows and the following columns:
+📄 File Used: expenses.csv
+📊 Total Records: 10 rows
 
-Column	Description
-Date	Date of the expense transaction
-Category	Expense category (e.g., Food, Travel, Shopping, Bills, etc.)
+🏷️ Column	📖 Description
+Date	The date when an expense was made
+Category	Type of expense (Food, Travel, Shopping, etc.)
 Amount	Expense amount in ₹ (Indian Rupees)
 
-The small dataset was used to demonstrate core data-handling and visualization techniques.
-In future milestones, it will be expanded to 10 K – 20 K rows for AI and forecasting tasks.
+💡 In Milestone 2, this dataset will be expanded to 10,000–20,000 rows for forecasting tasks.
 
 ⚙️ 4. Technologies and Libraries Used
-Library	Purpose
-NumPy	Used for numerical computations such as total and average expenses
-Pandas	Used for loading, cleaning, grouping, and summarizing data
-Matplotlib	Used for visualizing data in bar and line charts
-Python 3.x	Core programming language used for implementation
+🔧 Library/Tool	🧠 Purpose
+Python 3.x	Main programming language
+NumPy	Numerical computations (sum, mean)
+Pandas	Data handling, grouping, and summarization
+Matplotlib	Data visualization using charts
 
-🧹 5. Data Preprocessing
+🧹 5. Data Preprocessing Steps
 
-Before analysis, the dataset underwent several preprocessing steps:
+Loaded dataset using pandas.read_csv("expenses.csv").
 
-Data Loading – Imported the CSV file using pandas.read_csv().
+Inspected data with data.head() to check column names and values.
 
-Inspection – Displayed the first few rows with display(data.head()) to verify structure.
+Converted “Amount” to a NumPy array for calculations.
 
-Conversion – Converted the “Amount” column into a NumPy array for numerical operations.
+Grouped data by Category and Date using groupby().
 
-Grouping & Aggregation – Grouped data by “Category” and “Date” to calculate total expenses.
+Sorted data by highest spending categories.
 
-Sorting – Sorted categories by highest total to improve readability of charts.
 
-Verification – Checked for missing or duplicate values; dataset was clean.
-
-📊 6. Data Analysis and Visualization
-🔸 Step 1 – Total and Average Expense
-
-Calculated using NumPy:
-
+📊 6. Data Analysis and Visualizations
+🔹 Step 1 – Calculate Total & Average Expense
 total_expense = np.sum(amounts)
 average_expense = np.mean(amounts)
 
 
-Displays total and average spending across all categories.
+Output Example:
+💰 Total Expense: ₹12,450
+📈 Average Expense: ₹1,245.00
 
-🔸 Step 2 – Category-wise Analysis
+🔹 Step 2 – Category-wise Expense Summary
 
-Grouped data by category:
+Grouped and sorted categories:
 
 category_summary = data.groupby('Category')['Amount'].sum().sort_values(ascending=False)
 
 
-Helps identify which expense categories have the highest totals.
+ Helps identify top spending areas.
 
-🔸 Step 3 – Bar Chart: Category-wise Expense
+🔹 Step 3 – Bar Chart: Category-wise Expense
 
-Created a bar chart to visualize total spending per category.
-The highest-spending category was highlighted in orange for emphasis.
+A bar chart displays total spending per category.
+The highest expense category is highlighted in 🟧 orange.
 
-🔸 Step 4 – Line Chart: Daily Expense Trend
+🔹 Step 4 – Line Chart: Daily Expense Trend
 
-Plotted daily totals to visualize how spending changes over time.
+A line chart shows how total expenses change by date.
+Used to identify spending peaks and dips.
 
-💡 7. Insights Gained
+💡 7. Key Insights
 
-The bar chart clearly shows which categories consume the most budget.
+📍 Highest spending category is easy to identify from the bar chart.
+📍 Total and average expenses show overall financial behavior.
+📍 Daily trends reveal which days have more spending.
+📍 Even a small dataset can give meaningful insights with proper visualization.
 
-The line chart highlights daily expense trends and fluctuations.
+🧠 8. Learnings & Skills Developed
 
-Calculating total and average expenses provides a quick financial summary.
+Hands-on experience with NumPy, Pandas, and Matplotlib.
 
-This milestone demonstrates the link between raw data and meaningful visuals.
+Data loading, manipulation, and summarization techniques.
 
-🧠 8. Learnings and Skills Developed
+Creating clear, labeled, and formatted visualizations.
 
-Fundamentals of data analysis in Python.
+Writing modular and readable Python code.
 
-Working with Pandas DataFrames for grouping and summarizing.
+Understanding data preprocessing before analysis.
 
-Performing mathematical operations using NumPy arrays.
+🔮 9. Future Scope (Milestone 2 Goals)
 
-Creating visualizations using Matplotlib.
+🚀 In the next milestone, the project will expand with:
 
-Writing and documenting structured, readable Python code.
+A larger dataset (10K–20K rows).
 
-Understanding how data preprocessing improves the accuracy of insights.
+Handling missing values and outliers.
 
-🔮 9. Future Scope (For Milestone 2)
+Advanced data visualizations (pie charts, histograms, box plots).
 
-In the next milestone, the project will be enhanced with:
+AI-based expense forecasting using Linear Regression.
 
-Larger Dataset (10 K – 20 K rows) to simulate real-world data.
+Time-based insights (monthly, weekly analysis).
 
-Data Cleaning – Handle missing values, outliers, and duplicates.
+Automatic insight generation & trend prediction reports.
 
-Time-Based Analysis – Monthly or weekly spending patterns.
+👨‍💻 10. Author Details
 
-AI-Based Forecasting – Predict future expenses using machine-learning models (Linear Regression).
-
-Advanced Visualizations – Pie charts, histograms, box plots, etc.
-
-Automated Insights – Dynamic reports summarizing key findings.
-
-👤 10. Author
-
-Name: Mitul Chhajed
-Program: Infosys Springboard Internship
-Milestone: 1 – Expense Analysis using NumPy, Pandas & Matplotlib
-Duration: 1 Week
+ Name: Mitul Chhajed
+ Program: Infosys Springboard Internship
+ Milestone: 1 – Expense Analysis using Python (NumPy, Pandas, Matplotlib)
+ Duration: 1 Week
