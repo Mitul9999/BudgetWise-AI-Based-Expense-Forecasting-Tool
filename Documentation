@@ -18,12 +18,13 @@ Build a foundation for AI-based expense forecasting in future milestones.
 
 📅 2. Project Timeline
 Phase	Task Description	Duration	Status
-Day 1–2	Understanding project requirements and dataset structure	2 Days	✅ Completed
-Day 3–4	Learning and practicing NumPy, Pandas, and Matplotlib basics	2 Days	✅ Completed
-Day 5	Implemented code for data loading, analysis, and visualizations	1 Day	✅ Completed
-Day 6	Testing, verifying outputs, and reviewing insights	1 Day	✅ Completed
-Day 7	Documentation writing and GitHub repository creation	1 Day	✅ Completed
-Total Duration	1 Week		✅ Successful
+Day 1–2	Understanding project requirements and dataset structure.
+Day 3–4	Learning and practicing NumPy, Pandas, and Matplotlib basics.
+Day 5	Implemented code for data loading, analysis, and visualizations.
+Day 6	Testing, verifying outputs, and reviewing insights.
+Day 7	Documentation writing and GitHub repository creation.
+Total Duration	1 Week	
+
 📂 3. Dataset Description
 
 The dataset used is expenses.csv, containing 10 rows and the following columns:
@@ -42,6 +43,7 @@ NumPy	Used for numerical computations such as total and average expenses
 Pandas	Used for loading, cleaning, grouping, and summarizing data
 Matplotlib	Used for visualizing data in bar and line charts
 Python 3.x	Core programming language used for implementation
+
 🧹 5. Data Preprocessing
 
 Before analysis, the dataset underwent several preprocessing steps:
